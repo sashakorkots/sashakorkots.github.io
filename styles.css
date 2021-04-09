@@ -1,3 +1,9 @@
+
+/* 
+=======================================
+Типографіка
+=======================================
+*/
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
@@ -5,13 +11,31 @@ h1 {
 }
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     color: darkcyan;
 }
 h4 {
+    font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: cadetblue;
 }
+h5 {
+    font-size: 20px;
+    color: cadetblue;
+}
+.col-1-3 p {
+    font-size: 16px;
+}
+.block_info {
+    border-bottom: solid slateblue;
+}
+
+
+/* 
+==========================================
+Таблиці
+==========================================
+ */
 table {
     border-collapse: collapse;
   }
@@ -20,6 +44,53 @@ td {
   border: 1px solid black;
   padding: 10px 15px;
 }
-.avatar {
+li {
+    list-style: square;
+}
+/* 
+============================================
+Роміщення елементів
+============================================
+ */
+ *,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header,footer, main {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.header-left {
+    display: inline-block;
+}
+.avatar {    
+
+    float: right;
+}
+.avatar img {
     height: 200px;
+}
+
+.col-1-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+}
+.block_info {
+    padding-bottom: 10px;
+}
+.data {
+    position: absolute;
+    margin-left: 25%;
+}
+.sect {
+    position: relative;
 }
