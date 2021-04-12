@@ -36,7 +36,6 @@ h5 {
     border-right: solid slateblue;
     border-left: solid slateblue;
 }
-
 /* 
 ==========================================
 Таблиці
@@ -56,6 +55,7 @@ li {
     list-style: square;
 }
 
+
 /* 
 ============================================
 Роміщення елементів
@@ -71,8 +71,6 @@ li {
 header, footer, main {
     width: 960px;
     margin: 0 auto;
-    /*     margin-left: 15%;
-    margin-right: 15%; */
 }
 
 .header-left {
@@ -103,11 +101,6 @@ header, footer, main {
     padding-left: 10px;
 }
 
-.data {
-    position: absolute;
-    margin-left: 25%;
-}
-
 .sect {
     position: relative;
 }
@@ -126,13 +119,13 @@ header, footer, main {
 }
 .container aside {
     position: absolute;
-    right: 10px;
+    width: 140px;
 }
 .nav li {
     list-style: none;
 }
 .block_info {
-    margin-right: 15%;
+    margin-left: 140px;
 }
 
 /* 
@@ -142,6 +135,15 @@ header
 */
 .header {
 
-    border-bottom: 4px solid slateblue;
+    border-bottom: 4px solid rgb(71, 63, 124);
     padding-bottom: 10px;
+}
+/* 
+===================================
+footer
+===================================
+*/
+.footer {
+    margin-top: 10px;
+    border-top: 4px solid rgb(71, 63, 124);
 }
