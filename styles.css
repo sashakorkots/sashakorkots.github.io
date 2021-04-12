@@ -143,9 +143,10 @@ header {
     top: 0px;
     height: 170px;
     z-index: 1;
+    
 }
 main {
-    margin-top: 180px;
+    margin-top: 190px;
 }
 
 .header-left {
@@ -171,6 +172,7 @@ main {
     float: left;
     vertical-align: top;
     margin: 0 auto;
+    padding-top: 3%;
 }
 
 .block_info {
@@ -219,7 +221,7 @@ main {
 header
 ==================================
 */
-.header {
+header {
     
     border-bottom: 4px solid rgb(71, 63, 124);
 
