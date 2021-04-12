@@ -114,6 +114,9 @@ th, td {
 header {
     background-color: rgb(255, 255, 255);
 }
+.container aside {
+    background-color: white;
+}
 
 /* 
 ============================================
@@ -189,10 +192,6 @@ main {
     overflow: auto;
     zoom: 1;
 }
-.grid {
-    width: 90%;
-    clear: left;
-}
 /* 
 ===============================
 Навігація 
@@ -200,17 +199,19 @@ main {
 */
 .container {
     position: relative;
+    
 }
 .container aside {
     padding-top: 20px;
     position: fixed;
-    width: 10%;
+    width: 100;
+    z-index: 1;
 }
 .nav li {
     list-style: none;
 }
 .block_info {
-    margin-left: 10%;
+    margin-left: 100px;
 }
 
 /* 
