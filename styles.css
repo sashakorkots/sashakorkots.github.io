@@ -110,10 +110,12 @@ header {
 
 table {
     border-collapse: collapse;
+    width: 99%;
 }
 
 th, td {
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 10px 15px;
 }
 
