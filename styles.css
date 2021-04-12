@@ -207,19 +207,17 @@ main {
 ===============================
 */
 .container {
-    position: relative;
+    display: flex;
     
 }
 .container aside {
-    padding-top: 20px;
-    float: left;
     width: 100px;
 }
 .nav li {
     list-style: none;
 }
-.block_info {
-    margin-left: 100px;
+.flex-column {
+    flex: 1;
 }
 
 /* 
