@@ -212,9 +212,8 @@ main {
 }
 .container aside {
     padding-top: 20px;
-    position: fixed;
-    width: 100;
-    z-index: 1;
+    float: left;
+    width: 100px;
 }
 .nav li {
     list-style: none;
