@@ -122,7 +122,6 @@ th, td {
 
 header, footer, main {
     max-width: 1000px;
-    min-width: 680px;
     margin: 0 auto;
     padding-left: 5px;
 }
