@@ -146,11 +146,11 @@ main {
 
 .avatar {
     float: right;
-    height: 100%;
+    width: 160px;
 }
 
 .avatar img {
-    height: 95%;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -231,4 +231,37 @@ footer
 .footer {
     margin-top: 10px;
     border-top: 4px solid rgb(71, 63, 124);
+}
+/* 
+===================================
+Media query
+===================================
+*/
+@media only screen and (max-width: 680px) {
+
+    .avatar {
+        float: none;
+    }
+    header {
+        height: 380px;
+        
+    }
+    .avatar {
+        width: 150px;
+        
+    }
+    main {
+        margin-top: 380px;
+    }
+    .header-left{
+        display: block;
+        
+    }
+    
+    .position {        
+        text-align: center;
+        margin: 0 auto;
+        
+    } 
+    
 }
