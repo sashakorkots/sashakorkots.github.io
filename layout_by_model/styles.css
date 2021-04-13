@@ -48,6 +48,7 @@ table {
 a {
     color: #FFFFFF;
 }
+
 header {
     color: #FFFFFF;
     font-size: 13px;
@@ -118,7 +119,7 @@ header {
 ==================================== 
 */
 
-*header, footer, main {
+header, footer, main {
     width: 375px;
     margin: 0 auto;
 }
@@ -158,11 +159,25 @@ h3 {
 .row {
     padding: 0px 34px 25px 29px;
 }
+
 .row p {
     margin-bottom: 14px;
 }
+
 .pair-row {
     background: #FFFAF2;
 }
-.pair-row 
 
+.container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-column {
+    -webkit-flex: 1;
+    text-align: left;
+    flex: 1;    
+}
