@@ -122,6 +122,7 @@ th, td {
 
 header, footer, main {
     max-width: 1000px;
+    min-width: 700px;
     margin: 0 auto;
     padding-left: 5px;
 }
@@ -163,6 +164,7 @@ main {
     vertical-align: top;
     margin: 0 auto;
     padding-top: 3%;
+    
 }
 
 .block_info {
@@ -237,8 +239,13 @@ footer
 Media query
 ===================================
 */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 700px) {
+    header, footer, main {
+        max-width: 400px;
+        min-width: 400px;
+        margin: 0 auto;
 
+    }
     .avatar {
         float: none;
     }
