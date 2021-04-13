@@ -32,13 +32,19 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+a {
+    text-decoration: none;
+    color: rgb(80, 107, 165);
+}
 /* 
 =======================================
 Типографіка
 =======================================
 */
-
+a:hover {
+    color: rgb(132, 0, 255);
+    font-size: 110%;
+}
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
@@ -85,6 +91,7 @@ header {
 .container aside {
     background-color: white;
 }
+
 
 /* 
 ==========================================
@@ -147,7 +154,7 @@ main {
 
 .avatar {
     float: right;
-    width: 160px;
+    width: 150px;
 }
 
 .avatar img {
@@ -200,6 +207,7 @@ main {
 
 .container {
     display: flex;
+    
 }
 
 .container aside {
@@ -208,6 +216,7 @@ main {
 
 .nav li {
     list-style: none;
+    margin-bottom: 5px ;
 }
 
 .flex-column {
