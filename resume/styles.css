@@ -44,6 +44,7 @@ a {
 a:hover {
     color: rgb(132, 0, 255);
     font-size: 110%;
+    cursor: pointer;
 }
 h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -195,9 +196,7 @@ main {
     zoom: 1;
 }
 
-.container aside {
-    padding-top: 20px;
-}
+
 
 /* 
 ===============================
@@ -206,12 +205,18 @@ main {
 */
 
 .container {
-    display: flex;
-    
+    display: flex;   
 }
+.container-aside {
+    position: relative;
+}
+.container-aside aside {
+    position: fixed;
 
+}
 .container aside {
     width: 100px;
+    padding-top: 20px;
 }
 
 .nav li {
@@ -281,5 +286,6 @@ Media query
         margin: 0 auto;
         
     } 
-    
+
+
 }
