@@ -38,6 +38,13 @@ table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* 
+=======================================
+типографія
+=======================================
+ */
+
 a {
     color: #FFFFFF;
 }
@@ -59,7 +66,6 @@ h1 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-
 }
 
 h2 {
@@ -68,14 +74,18 @@ h2 {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
 }
 
 .arrow {
     font-size: 50px;
-}
-.header-link {
-    padding-top: 41px;
 }
 
 header {
@@ -85,24 +95,74 @@ header {
     text-align: center;
     height: 275px;
     position: relative;
-    
 }
+
+.menu-icon {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.row p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    color: #333333
+}
+
 /* 
 ====================================
 Розміщення
 ==================================== 
 */
+
 *header, footer, main {
-    width: 373px;
+    width: 375px;
     margin: 0 auto;
 }
+
 header {
     padding-top: 36px;
 }
+
 .menu-icon {
     position: absolute;
+}
 
+h2 {
+    padding-top: 50px;
 }
-h1 {
-    
+
+.signature {
+    padding-top: 13px;
 }
+
+.header-link {
+    padding-top: 41px;
+}
+
+.menu-icon {
+    left: 34px;
+    top: 39px;
+    height: 24px;
+    width: 24px;
+}
+
+h3 {
+    padding-top: 25px;
+    padding-bottom: 19px;
+}
+
+.row {
+    padding: 0px 34px 25px 29px;
+}
+.row p {
+    margin-bottom: 14px;
+}
+.pair-row {
+    background: #FFFAF2;
+}
+.pair-row 
+
