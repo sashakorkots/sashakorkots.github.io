@@ -49,6 +49,15 @@ header a {
     color: #FFFFFF;
 }
 
+footer a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    text-decoration: none;
+}
+
 header {
     color: #FFFFFF;
     font-size: 13px;
@@ -253,4 +262,49 @@ h3 {
 
 .profile-picture {
     margin-bottom: 20px;
+}
+
+.galery {
+    width: 308px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.galery>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 195px;
+}
+
+.portfolio p {
+    text-align: center;
+}
+
+.link-lists {
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+}
+
+.link-lists ul {
+    width: 142px;
+}
+.contact {
+    margin-top: 30px;
+}
+.contact a{
+    display: block;
+}
+/* 
+===========================================
+media quary
+===========================================
+ */
+@media only screen and (min-width: 700px) {
+    header, main, footer {
+        width: 1440px;
+    }
+
 }
