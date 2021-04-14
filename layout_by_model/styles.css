@@ -218,7 +218,6 @@ h3 {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
@@ -227,9 +226,8 @@ h3 {
 }
 
 .flex-column {
-    -webkit-flex: 1;
     text-align: left;
-    flex: 1;
+    width: 309px;
 }
 
 .flex-column li {
@@ -267,7 +265,6 @@ h3 {
 .galery {
     width: 308px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -305,6 +302,25 @@ media quary
 @media only screen and (min-width: 700px) {
     header, main, footer {
         width: 1440px;
+        margin: 0 auto;
     }
-
+    header {
+        height: 768px;
+        background-size:;
+    }
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .galery {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .portfolio>div{
+        display: flex;
+        flex-direction: row;
+    }
+    .link-lists {
+        justify-content: space-around;
+    }
 }
