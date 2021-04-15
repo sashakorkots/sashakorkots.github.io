@@ -44,7 +44,9 @@ table {
 типографія
 =======================================
  */
-
+ body {
+    font-family: Libre Franklin;
+}
 header a {
     color: #FFFFFF;
 }
@@ -67,9 +69,14 @@ header {
     letter-spacing: 0em;
 }
 
-body {
-    font-family: Libre Franklin;
+.main-nav {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
 }
+
+
 
 h1 {
     font-style: normal;
@@ -114,7 +121,7 @@ h5 {
 }
 
 header {
-    background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bgfds.png);
+    background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bg_for_Iphone.png);
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
@@ -167,9 +174,29 @@ header {
 */
 
 header, footer, main {
-    width: 375px;
+    min-width: 375px;
+    max-width: 900px;
     margin: 0 auto;
 }
+
+.main-nav {
+    display: none;
+    position: absolute;
+    right: 34px;
+    top: 39px;
+    height: 24px;
+    
+}
+.main-nav>ul>li {
+    display: inline-block;
+    margin: 0 30px 0 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+
 
 header {
     padding-top: 36px;
@@ -190,7 +217,12 @@ h2 {
 .header-link {
     padding-top: 41px;
 }
-
+.main-nav {
+    
+}
+.main-nav ul li {
+    display: inline-block;
+}
 .menu-icon {
     left: 34px;
     top: 39px;
@@ -219,6 +251,7 @@ h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .container>div {
@@ -275,38 +308,57 @@ h3 {
     height: 195px;
 }
 
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .portfolio p {
     text-align: center;
 }
 
 .link-lists {
     display: flex;
-    justify-content: left;
     justify-content: space-between;
+    width: 308px;
+    padding-bottom: 30px;
 }
 
 .link-lists ul {
     width: 142px;
 }
+
 .contact {
-    margin-top: 30px;
+    width: 308px;
 }
-.contact a{
+
+.contact a {
     display: block;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* 
 ===========================================
 media quary
 ===========================================
  */
-@media only screen and (min-width: 700px) {
+
+@media only screen and (min-width: 900px) {
     header, main, footer {
-        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
         margin: 0 auto;
     }
     header {
         height: 768px;
-        background-size:;
+        background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bgfds.png);
     }
     .container {
         flex-direction: row;
@@ -314,13 +366,26 @@ media quary
     }
     .galery {
         flex-direction: row;
-        justify-content: space-evenly;
     }
-    .portfolio>div{
+    .portfolio {
         display: flex;
         flex-direction: row;
-    }
-    .link-lists {
         justify-content: space-around;
+        align-items: flex-start;
+    }
+    .portfolio p {
+        width: 30%;
+        text-align: justify;
+    }
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .main-nav {
+        display: block;
+    }
+    .menu-icon {
+        display: none;
     }
 }
