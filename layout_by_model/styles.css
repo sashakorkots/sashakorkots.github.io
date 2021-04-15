@@ -173,7 +173,7 @@ header {
 ==================================== 
 */
 
-header, footer, main {
+body {
     min-width: 375px;
     max-width: 900px;
     margin: 0 auto;
@@ -217,9 +217,7 @@ h2 {
 .header-link {
     padding-top: 41px;
 }
-.main-nav {
-    
-}
+
 .main-nav ul li {
     display: inline-block;
 }
@@ -351,11 +349,13 @@ media quary
  */
 
 @media only screen and (min-width: 900px) {
-    header, main, footer {
-        min-width: 1440px;
-        max-width: 1440px;
+    body {
+        min-width: none;
+        max-width: none;
+        width: 1440px;
         margin: 0 auto;
     }
+
     header {
         height: 768px;
         background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bgfds.png);
