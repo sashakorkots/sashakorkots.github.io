@@ -44,9 +44,12 @@ table {
 типографія
 =======================================
  */
- body {
+
+body {
     font-family: Libre Franklin;
+    font-size: 12px;
 }
+
 header a {
     color: #FFFFFF;
 }
@@ -62,7 +65,6 @@ footer a {
 
 header {
     color: #FFFFFF;
-    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -75,8 +77,6 @@ header {
     font-size: 18px;
     line-height: 22px;
 }
-
-
 
 h1 {
     font-style: normal;
@@ -112,7 +112,6 @@ h4 {
 h5 {
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
     line-height: 25px;
 }
 
@@ -138,7 +137,7 @@ header {
 .row p {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+
     line-height: 15px;
     text-align: justify;
     color: #333333
@@ -147,7 +146,7 @@ header {
 .flex-column li {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+
     line-height: 25px;
 }
 
@@ -163,10 +162,6 @@ header {
     z-index: 1;
 }
 
-.fornt-end-dev-strip {
-    width: 165px;
-}
-
 /* 
 ====================================
 Розміщення
@@ -179,14 +174,14 @@ body {
     margin: 0 auto;
 }
 
+main>section, footer {
+    padding: 0 7% 0 9%;
+}
+
 .main-nav {
     display: none;
-    position: absolute;
-    right: 34px;
-    top: 39px;
-    height: 24px;
-    
 }
+
 .main-nav>ul>li {
     display: inline-block;
     margin: 0 30px 0 30px;
@@ -195,8 +190,6 @@ body {
 .main-nav a {
     text-decoration: none;
 }
-
-
 
 header {
     padding-top: 36px;
@@ -221,6 +214,7 @@ h2 {
 .main-nav ul li {
     display: inline-block;
 }
+
 .menu-icon {
     left: 34px;
     top: 39px;
@@ -229,12 +223,13 @@ h2 {
 }
 
 h3 {
-    padding-top: 25px;
+    
     padding-bottom: 19px;
 }
 
 .row {
-    padding: 0px 34px 25px 29px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .row p {
@@ -252,13 +247,21 @@ h3 {
     align-items: center;
 }
 
-.container>div {
+.flex-column {
     margin-top: 6px;
+    min-width: 308px;
+    
+}
+.profile-picture {
+    width: 224px;
+}
+.profile-picture>img {
+    width: 100%;
 }
 
 .flex-column {
     text-align: left;
-    width: 309px;
+    width: 82%;
 }
 
 .flex-column li {
@@ -269,7 +272,7 @@ h3 {
 }
 
 .flex-column li>div>div {
-    width: 211px;
+    width: 83%;
 }
 
 .flex-column li>div {
@@ -277,22 +280,31 @@ h3 {
     justify-content: space-between;
 }
 
+.flex-column h5 {
+    min-width: 82px;
+    width: 21%;
+    margin-right: 4%;
+}
+
 .fornt-end-dev-strip {
-    width: 135px;
+    width: 63%;
 }
 
 .ui-design-strip {
-    width: 165px;
+    width: 78%;
 }
 
 .ux-research-strip {
-    width: 179px;
+    width: 84%;
 }
 
 .profile-picture {
     margin-bottom: 20px;
 }
 
+.portfolio>div>img {
+    width: 100%;
+}
 .galery {
     width: 308px;
     display: flex;
@@ -305,7 +317,9 @@ h3 {
     justify-content: space-between;
     height: 195px;
 }
-
+.galery>div>img {
+    width: 100%;
+}
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -350,19 +364,26 @@ media quary
 
 @media only screen and (min-width: 900px) {
     body {
-        min-width: none;
-        max-width: none;
-        width: 1440px;
+        min-width: 900px;
+        max-width: 1440px;
         margin: 0 auto;
+        
     }
-
+    main>section, footer, header {
+        padding: 6% 10% 8% 11%;
+    }
+    .row {
+        padding-top: 7%;
+        padding-bottom: 10%;
+    }
     header {
         height: 768px;
         background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bgfds.png);
     }
     .container {
         flex-direction: row;
-        justify-content: space-evenly;
+        align-items: left;
+        text-align: left;
     }
     .galery {
         flex-direction: row;
@@ -388,4 +409,75 @@ media quary
     .menu-icon {
         display: none;
     }
+    .row {
+        padding-bottom: 5%;
+    }
+    .main-nav {
+        top: (header);
+    }
+    h3 {
+        padding-bottom: 76px;
+    }
+    .row p {
+        padding-top: 9px;
+    }
+    /* 
+    ==============================================
+    типографіка
+    ==============================================
+     */
+     body {
+        font-size: 18px;
+    }
+    h1 {
+        text-align: left;
+    }
+    h2 {
+        font-family: Libre Franklin;
+        font-size: 64px;
+        line-height: 78px;
+    }
+    h3 {
+        text-align: left;
+        
+    }
+    h4 {
+        font-size: 18px;
+        text-align: left;
+    }
+    .row p {
+        font-style: normal;
+        font-weight: normal;
+
+        line-height: 167%;
+        text-align: justify;
+        color: #333333;
+    }
+    .profile-picture {
+        width: 350px;
+    }
+    .flex-column {
+        padding-left: 9%;
+    }
+    .flex-column h5 {
+        min-width: 125px;
+    }
+    .portfolio {
+        height: 518px;
+        justify-content: space-between;
+    }
+    .galery {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .galery>div {
+        width: 48%;
+    }
+    .galery>div>img {
+        width: 100%;
+    }
+
+
 }
