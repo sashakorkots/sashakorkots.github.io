@@ -339,13 +339,15 @@ h3 {
     display: flex;
     justify-content: space-between;
     width: 308px;
-    padding-bottom: 30px;
+    
 }
 
 .link-lists ul {
     width: 142px;
 }
-
+.link-lists ul>li {
+    margin-bottom: 19px;
+}
 .contact {
     width: 308px;
 }
