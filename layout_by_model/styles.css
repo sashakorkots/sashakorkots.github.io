@@ -121,6 +121,7 @@ h5 {
 
 header {
     background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bg_for_Iphone.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
@@ -137,7 +138,6 @@ header {
 .row p {
     font-style: normal;
     font-weight: normal;
-
     line-height: 15px;
     text-align: justify;
     color: #333333
@@ -146,7 +146,6 @@ header {
 .flex-column li {
     font-style: normal;
     font-weight: normal;
-
     line-height: 25px;
 }
 
@@ -179,12 +178,17 @@ main>section, footer {
 }
 
 .main-nav {
+    min-width: 510px;
+    float: right;
     display: none;
+    text-align: right;
+
 }
 
 .main-nav>ul>li {
     display: inline-block;
-    margin: 0 30px 0 30px;
+
+    margin-right: 8%;
 }
 
 .main-nav a {
@@ -200,11 +204,11 @@ header {
 }
 
 h2 {
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .signature {
-    padding-top: 13px;
+    margin-top: 13px;
 }
 
 .header-link {
@@ -223,8 +227,7 @@ h2 {
 }
 
 h3 {
-    
-    padding-bottom: 19px;
+    margin-bottom: 19px;
 }
 
 .row {
@@ -249,20 +252,19 @@ h3 {
 
 .flex-column {
     margin-top: 6px;
-    min-width: 308px;
-    
+    text-align: left;
+    width: 82%;
 }
+
 .profile-picture {
     width: 224px;
 }
+
 .profile-picture>img {
     width: 100%;
 }
 
-.flex-column {
-    text-align: left;
-    width: 82%;
-}
+
 
 .flex-column li {
     display: flex;
@@ -305,6 +307,7 @@ h3 {
 .portfolio>div>img {
     width: 100%;
 }
+
 .galery {
     width: 308px;
     display: flex;
@@ -317,9 +320,11 @@ h3 {
     justify-content: space-between;
     height: 195px;
 }
+
 .galery>div>img {
     width: 100%;
 }
+
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -367,7 +372,6 @@ media quary
         min-width: 900px;
         max-width: 1440px;
         margin: 0 auto;
-        
     }
     main>section, footer, header {
         padding: 6% 10% 8% 11%;
@@ -379,6 +383,7 @@ media quary
     header {
         height: 768px;
         background: linear-gradient( rgba(198, 108, 73, 0.4), rgba(198, 108, 73, 0.4)), url(img/bgfds.png);
+        background-position: center;
     }
     .container {
         flex-direction: row;
@@ -396,12 +401,16 @@ media quary
     }
     .portfolio p {
         width: 30%;
+        min-width: 349px;
         text-align: justify;
     }
     .footer-container {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: flex-start;
+    }
+    .footer-container>div {
+        width: 50%;
     }
     .main-nav {
         display: block;
@@ -421,15 +430,68 @@ media quary
     .row p {
         padding-top: 9px;
     }
+    .profile-picture {
+        min-width: 350px;
+    }
+    .flex-column {
+        margin-left: 11%;
+    }
+    .flex-column h5 {
+        min-width: 125px;
+    }
+    .portfolio {
+        justify-content: flex-start;
+    }
+    .galery {
+        margin-left: 11%;
+        width: 634px;
+    }
+    .galery>div {
+        height: 100%;
+        justify-content: space-between;
+    }
+    .galery>div>img {
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    .galery-right-column {
+        width: 40%;
+    }
+    .galery-left-column {
+        width: 55%;
+    }
+
+    .link-lists>ul>li {
+        margin-bottom: 14px;
+    }
+    .contact a {
+        margin-bottom: 14px;
+    }
+
+    .contact {
+        text-align: center;        
+    }
+    h2 {
+        margin-top: 145px;
+    }
+    .signature {
+        margin-top: 26px;
+    }
+    .header-link {
+        padding-top: 106px;
+    }
+    .profile {
+        padding-bottom: 5%;
+    }
     /* 
     ==============================================
     типографіка
     ==============================================
      */
-     body {
+    body {
         font-size: 18px;
     }
-    h1 {
+    header {
         text-align: left;
     }
     h2 {
@@ -439,45 +501,26 @@ media quary
     }
     h3 {
         text-align: left;
-        
     }
     h4 {
         font-size: 18px;
         text-align: left;
     }
+    .signature {
+        font-size: 24px;   
+    }
     .row p {
         font-style: normal;
         font-weight: normal;
-
         line-height: 167%;
         text-align: justify;
         color: #333333;
     }
-    .profile-picture {
-        width: 350px;
+    .footer-container a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        
     }
-    .flex-column {
-        padding-left: 9%;
-    }
-    .flex-column h5 {
-        min-width: 125px;
-    }
-    .portfolio {
-        height: 518px;
-        justify-content: space-between;
-    }
-    .galery {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-
-    }
-    .galery>div {
-        width: 48%;
-    }
-    .galery>div>img {
-        width: 100%;
-    }
-
-
 }
