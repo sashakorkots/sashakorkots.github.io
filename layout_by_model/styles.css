@@ -425,7 +425,7 @@ media quary
         top: (header);
     }
     h3 {
-        padding-bottom: 76px;
+        margin-bottom: 76px;
     }
     .row p {
         padding-top: 9px;
@@ -482,6 +482,9 @@ media quary
     }
     .profile {
         padding-bottom: 5%;
+    }
+    .flex-column li {
+        margin-bottom: 2%
     }
     /* 
     ==============================================
