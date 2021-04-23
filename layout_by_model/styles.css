@@ -48,6 +48,8 @@ table {
 body {
     font-family: Libre Franklin;
     font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
 }
 
 header a {
@@ -56,7 +58,7 @@ header a {
 
 footer a {
     font-style: normal;
-    font-weight: normal;
+    
     font-size: 14px;
     line-height: 17px;
     color: #333333;
@@ -72,14 +74,14 @@ header {
 }
 
 .main-nav {
-    font-style: normal;
-    font-weight: normal;
+    
+    
     font-size: 18px;
     line-height: 22px;
 }
 
 h1 {
-    font-style: normal;
+    
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -87,14 +89,14 @@ h1 {
 
 h2 {
     font-size: 20px;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
 }
 
 h3 {
-    font-style: normal;
+    
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -102,7 +104,7 @@ h3 {
 }
 
 h4 {
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
@@ -110,7 +112,7 @@ h4 {
 }
 
 h5 {
-    font-style: normal;
+    
     font-weight: 600;
     line-height: 25px;
 }
@@ -136,16 +138,16 @@ header {
 }
 
 .row p {
-    font-style: normal;
-    font-weight: normal;
+    
+    
     line-height: 15px;
     text-align: justify;
     color: #333333
 }
 
 .flex-column li {
-    font-style: normal;
-    font-weight: normal;
+    
+    
     line-height: 25px;
 }
 
@@ -212,7 +214,7 @@ h2 {
 }
 
 .header-link {
-    padding-top: 41px;
+    margin-top: 41px;
 }
 
 .main-nav ul li {
@@ -270,7 +272,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 22px;
+    margin-bottom: 22px;
 }
 
 .flex-column li>div>div {
@@ -288,17 +290,6 @@ h3 {
     margin-right: 4%;
 }
 
-.fornt-end-dev-strip {
-    width: 63%;
-}
-
-.ui-design-strip {
-    width: 78%;
-}
-
-.ux-research-strip {
-    width: 84%;
-}
 
 .profile-picture {
     margin-bottom: 20px;
@@ -371,7 +362,7 @@ media quary
 
 @media only screen and (min-width: 900px) {
     body {
-        min-width: 900px;
+        
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -515,15 +506,15 @@ media quary
         font-size: 24px;   
     }
     .row p {
-        font-style: normal;
-        font-weight: normal;
+        
+        
         line-height: 167%;
         text-align: justify;
         color: #333333;
     }
     .footer-container a {
-        font-style: normal;
-        font-weight: normal;
+        
+        
         font-size: 18px;
         line-height: 22px;
         
